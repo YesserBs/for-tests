@@ -1,0 +1,18 @@
+#rectangle {
+    width: 300px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: -300px; /* Start off-screen */
+    transition: top 1000ms ease-in-out;
+    border-radius: 6px;
+    box-shadow: 0 0 25px rgba(138, 138, 138, 0.762);
+}
+
+#rectangle.visible {
+    top: 30px; /* Position when visible */
+}
+
+.hidden {
+    top: -100px;
+}
