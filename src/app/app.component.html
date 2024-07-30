@@ -1,2 +1,10 @@
-<app-popup></app-popup>
-<router-outlet></router-outlet>
+<div id="centrer">
+  <app-user-type
+    *ngFor="let item of userTypes; let i = index"
+    [isSelected]="selectedIndex === i"
+    [iconClass]="item.iconClass"
+    [titre]="item.title"
+    [description]="item.description"
+    (select)="onSelect(i)">
+  </app-user-type>
+</div>

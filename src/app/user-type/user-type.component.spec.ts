@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PopupComponent } from './popup.component';
+import { UserTypeComponent } from './user-type.component';
 
-describe('PopupComponent', () => {
-  let component: PopupComponent;
-  let fixture: ComponentFixture<PopupComponent>;
+describe('UserTypeComponent', () => {
+  let component: UserTypeComponent;
+  let fixture: ComponentFixture<UserTypeComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [PopupComponent]
+      declarations: [UserTypeComponent]
     });
-    fixture = TestBed.createComponent(PopupComponent);
+    fixture = TestBed.createComponent(UserTypeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
