@@ -3,8 +3,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
-  height: 80%;
+  width:  95%;
+  height: 90%;
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 1000;
@@ -17,11 +17,11 @@
 
 .close-button {
   position: absolute;
-  top: 10px;
+  top: -30px; /* Positionné au-dessus du PDF */
   right: 10px;
-  background-color: red;
-  color: white;
+  background-color: transparent;
   border: none;
-  padding: 5px 10px;
+  font-size: 24px;
+  color: #616161;
   cursor: pointer;
 }
