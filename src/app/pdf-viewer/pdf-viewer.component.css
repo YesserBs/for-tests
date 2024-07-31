@@ -1,0 +1,8 @@
+#pdf-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  canvas {
+    margin-bottom: 10px;
+  }
