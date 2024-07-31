@@ -1,14 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PdfService } from '../pdf.service';
 
 @Component({
   selector: 'app-pdf-viewer',
   templateUrl: './pdf-viewer.component.html',
   styleUrls: ['./pdf-viewer.component.css']
 })
-export class PdfViewerComponent {
-  pdfUrl: string = 'https://res.cloudinary.com/dukugsekf/image/upload/v1722420857/PDFs/cfxtbyypptll2egb4wx5.pdf';
+export class PdfViewerComponent implements OnInit {
+  pdfUrl: string = '';
 
-  openPdf() {
-    window.open(this.pdfUrl, '_blank');
+  constructor(private pdfService: PdfService) {}
+
+  ngOnInit() {
+    this.pdfService.pdfUrl$.subscribe(url => {
+      this.pdfUrl = url;
+    });
+  }
+
+  closePdf() {
+    this.pdfUrl = '';
   }
 }

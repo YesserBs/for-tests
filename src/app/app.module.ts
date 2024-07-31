@@ -7,12 +7,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { UserTypeComponent } from './components/user-type/user-type.component';
 import { PdfViewerComponent } from './pdf-viewer/pdf-viewer.component';
+import { SafeUrlPipe } from './safe-url.pipe';
+import { ButtonComponent } from './button/button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserTypeComponent,
     PdfViewerComponent,
+    SafeUrlPipe,
+    ButtonComponent,
   ],
   imports: [
     BrowserModule,
