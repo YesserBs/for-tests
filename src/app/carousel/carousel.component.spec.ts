@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { UserTypeComponent } from './user-type.component';
+import { CarouselComponent } from './carousel.component';
 
-describe('UserTypeComponent', () => {
-  let component: UserTypeComponent;
-  let fixture: ComponentFixture<UserTypeComponent>;
+describe('CarouselComponent', () => {
+  let component: CarouselComponent;
+  let fixture: ComponentFixture<CarouselComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [UserTypeComponent]
+      declarations: [CarouselComponent]
     });
-    fixture = TestBed.createComponent(UserTypeComponent);
+    fixture = TestBed.createComponent(CarouselComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

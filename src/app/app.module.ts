@@ -5,18 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { UserTypeComponent } from './components/user-type/user-type.component';
-import { PdfViewerComponent } from './pdf-viewer/pdf-viewer.component';
-import { SafeUrlPipe } from './safe-url.pipe';
-import { ButtonComponent } from './button/button.component';
+import { ModalComponent } from './components/modal/modal.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserTypeComponent,
-    PdfViewerComponent,
-    SafeUrlPipe,
-    ButtonComponent,
+    ModalComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,16 @@
+<div class="modal" *ngIf="isVisible">
+    <div class="modal-content">
+      <h2>Entretien</h2>
+      <h5>Envoier un email au candidat</h5>
+      <form (ngSubmit)="onSubmit()">
+        <label for="date">Date d'entretien:</label>
+        <input type="date" id="date" [(ngModel)]="date" name="date" required>
+        
+        <label for="remark">Remarque: (optionnel)</label>
+        <textarea id="remark" [(ngModel)]="remark" name="remark"></textarea>
+        
+        <button type="submit">Continuer</button>
+        <button type="button" (click)="onCancel()">Annuler</button>
+      </form>
+    </div>
+  </div>
