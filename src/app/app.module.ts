@@ -7,12 +7,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ModalComponent } from './components/modal/modal.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ModalComponent,
     CarouselComponent,
+    ImageCarouselComponent,
   ],
   imports: [
     BrowserModule,

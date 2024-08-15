@@ -1,0 +1,29 @@
+.carousel {
+    overflow: hidden;
+    width: 100%; /* Utiliser une largeur fixe en pixels */
+    height: 100px; /* Utiliser une hauteur fixe en pixels */
+    position: relative;
+    margin: auto; /* Centrer le carrousel */
+    background-color: red;
+  }
+  
+  .carousel-track {
+    display: flex;
+    animation: scroll 3s linear infinite; /* Ajuster la durée pour couvrir toutes les images */
+  }
+  
+  .carousel-track img {
+    width: 100%; /* Assurez-vous que les images remplissent le conteneur */
+    height: 100px; /* Assurez-vous que les images remplissent le conteneur */
+    object-fit: cover; /* Pour que les images s'ajustent bien */
+    flex-shrink: 0;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%); /* Ajuster pour couvrir toutes les images */
+    }
+  }

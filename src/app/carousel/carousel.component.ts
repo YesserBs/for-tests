@@ -7,9 +7,9 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 })
 export class CarouselComponent implements OnInit, OnDestroy {
   items = [
-    'https://via.placeholder.com/600x300?text=Slide+1',
-    'https://via.placeholder.com/600x300?text=Slide+2',
-    'https://via.placeholder.com/600x300?text=Slide+3'
+    'assets/main2-bg.jpg',
+    'assets/main2-bg.jpg',
+    'assets/main2-bg.jpg'
   ];
   currentIndex = 0;
   intervalId: any;
@@ -25,6 +25,7 @@ export class CarouselComponent implements OnInit, OnDestroy {
   startAutoSlide() {
     this.intervalId = setInterval(() => {
       this.next();
+      console.log('Waiwa!');
     }, 4000);
   }
 
