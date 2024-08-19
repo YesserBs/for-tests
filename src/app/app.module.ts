@@ -8,6 +8,8 @@ import { FormsModule } from '@angular/forms';
 import { ModalComponent } from './components/modal/modal.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
+import { ParallaxBackgroundComponent } from './parallax-background/parallax-background.component';
+import { ParallaxComponent } from './parallax/parallax.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { ImageCarouselComponent } from './image-carousel/image-carousel.componen
     ModalComponent,
     CarouselComponent,
     ImageCarouselComponent,
+    ParallaxBackgroundComponent,
+    ParallaxComponent,
   ],
   imports: [
     BrowserModule,

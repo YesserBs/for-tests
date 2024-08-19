@@ -4,12 +4,12 @@
     height: 100px; /* Utiliser une hauteur fixe en pixels */
     position: relative;
     margin: auto; /* Centrer le carrousel */
-    background-color: red;
+    background-color: #3C81C2;
   }
   
   .carousel-track {
     display: flex;
-    animation: scroll 3s linear infinite; /* Ajuster la durée pour couvrir toutes les images */
+    animation: scroll 15s linear infinite; /* Ajuster la durée pour couvrir toutes les images */
   }
   
   .carousel-track img {
@@ -24,6 +24,6 @@
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-100%); /* Ajuster pour couvrir toutes les images */
+      transform: translateX(-400%); /* Ajuster pour couvrir toutes les images */
     }
   }
